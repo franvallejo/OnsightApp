@@ -1,0 +1,19 @@
+<ion-view view-title="{{nombre}}" style="overflow: hidden;">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div class="ionic">
+            <div class="hero has-mask" style="background-image: url('img/{{ruta.id_Ruta}}.png'); opacity: 1;" onerror="if (this.src != 'img/default.png') this.src = 'img/default.png'; style="opacity: 1;">
+            </div>
+            <div class="mid-bar dark-bg z1 padding">
+            <h3>{{ruta.Nombre}}</h3>
+                <p>Sector: {{ruta.Sector}}</p>
+                <p>Nivel: {{ruta.id_Nivel}}</p>
+            </div>
+            <div class="content double-padding">
+                <h4 class="dark">Tipo de roca: {{ruta.id_Roca}}</h4>
+                <p class="text-muted">
+                 {{ruta.Descripcion}}
+                </p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+<ion-view view-title="Rutas Favoritas" style="overflow: hidden;">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div class="list animate-fade-slide-in-right" ng-repeat="favorita in favoritas" ui-sref="app.item({id_Ruta: favorita.id_Ruta, nombre:favorita.Nombre})">
+            <a class="item item-avatar item-icon-right waves-effect waves-button waves-dark in done" style="transition-delay: 0.51s;">
+                <img src="../img/{{favorita.id_Ruta}}.png" onerror="if (this.src != 'img/default.png') this.src = 'img/default.png';" style="opacity: 1;">
+                <h2>{{favorita.Nombre}}</h2>
+                <p>{{favorita.Descripcion}}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

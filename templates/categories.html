@@ -1,0 +1,38 @@
+<!--ion-view view-title="Estilos" style="overflow: hidden;">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div>
+            <ion-list class="card dark-bg in" ng-repeat="estilo in estilos" ui-sref="app.list({id_Tipo: estilo.id_Tipo, nombre: estilo.Nombre})" style="transition-delay: 0.13s;">
+                <a class="item item-bg-image">
+                    <h2 class="center" style="margin-top: 30px">{{estilo.Nombre}}</h2>
+                    <img class="full-image" src="img/psicobloc1.jpj" style="opacity: 1">
+                </a>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view-->
+
+
+<ion-view view-title="Estilos" style="overflow: hidden;">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div>
+            <ion-list class="card dark-bg in" ui-sref="app.list({id_Tipo: 1, nombre: 'Psicobloc'})" style="transition-delay: 0.13s;">
+                <a class="item item-bg-image">
+                    <h2 class="center" style="margin-top: 30px">PSICOBLOC</h2>
+                    <img class="full-image" src="img/psicobloc1.jpg" style="opacity: 1">
+                </a>
+            </ion-list>
+            <ion-list class="card dark-bg in" ui-sref="app.list({id_Tipo: 2, nombre: 'Clasica/Deportiva'})" style="transition-delay: 0.13s;">
+                <a class="item item-bg-image">
+                    <h2 class="center" style="margin-top: 30px">CLASICA/DEPORTIVA</h2>
+                    <img class="full-image" src="img/deportiva1.JPG" style="opacity: 1">
+                </a>
+            </ion-list>
+            <ion-list class="card dark-bg in" ui-sref="app.list({id_Tipo: 3, nombre: 'Bulder'})" style="transition-delay: 0.13s;">
+                <a class="item item-bg-image">
+                    <h2 class="center" style="margin-top: 30px">BULDER</h2>
+                    <img class="full-image" src="img/bulder4.jpg" style="opacity: 1">
+                </a>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+<ion-view view-title="Rutas Realizadas" style="overflow: hidden;">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div class="list animate-fade-slide-in-right" ng-repeat="realizada in realizadas" ui-sref="app.item({id_Ruta: realizada.id_Ruta, nombre:realizada.Nombre})">
+            <a class="item item-avatar item-icon-right waves-effect waves-button waves-dark in done" style="transition-delay: 0.51s;">
+                <img src="../img/{{realizada.id_Ruta}}.png" onerror="if (this.src != 'img/default.png') this.src = 'img/default.png';" style="opacity: 1;">
+                <h2>{{realizada.Nombre}}</h2>
+                <p>{{realizada.Descripcion}}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

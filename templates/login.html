@@ -1,0 +1,22 @@
+<ion-view view-title="" align-title="left">
+    <ion-content style="background: url(../img/intro.jpg) center; background-size: cover;">
+        <div class="hero no-header flat" style="margin-top: 0px;">
+            <div class="content">
+                <h1 >Onsight</h1>
+                <h4>Tu guia de escalada</h4>
+            </div>
+        </div>
+        <div class="list list-inset" style="color: red;">
+          <label class="item item-input">
+          <input type="email" placeholder="Usuario" ng-model=user.Email>
+        </label>
+        <label class="item item-input">
+            <input type="password" placeholder="Contraseña" ng-model="user.Contrasena">
+        </label>
+    </div>
+    <div class="padding"  style="margin-top: 100px;"">
+       <!--a href="#/" class="modal-action modal-close waves-effect waves-light btn shades white black-text center-align" style="margin-top: 20px !important;" ng-click="login(user);">Entrar</a-->
+        <button class="button button-full button-assertive ink" ng-click="login(user);"  ui-sref="app.panel">Login</button>
+    </div>
+</ion-content>
+</ion-view>

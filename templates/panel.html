@@ -1,0 +1,24 @@
+<ion-view view-title="Estilos" style="overflow: hidden;">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div style="background-color: #1E2D32">
+            <ion-list class="card dark-bg in" ui-sref="app.favoritas" style="transition-delay: 0.13s;"">
+                <a class="item item-bg-image">
+                    <h2 class="center" style="margin-top: 30px; color:black">MIS FAVORITAS</h2>
+                    <img class="full-image" src="img/favoritas.jpg" style="opacity: 1">
+                </a>
+            </ion-list>
+            <ion-list class="card dark-bg in" ui-sref="app.realizadas" style="transition-delay: 0.13s;">
+                <a class="item item-bg-image">
+                    <h2 class="center" style="margin-top: 30px; color:black">MIS SUBIDAS</h2>
+                    <img class="full-image" src="img/realizadas.png" style="opacity: 1">
+                </a>
+            </ion-list>
+            <ion-list class="card dark-bg in" ui-sref="app.pendientes" style="transition-delay: 0.13s;">
+                <a class="item item-bg-image">
+                    <h2 class="center" style="margin-top: 30px; color:black">MIS PENDIENTES</h2>
+                    <img class="full-image" src="img/pendientes.jpg" style="opacity: 1">
+                </a>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>
